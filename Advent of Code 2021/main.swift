@@ -1,11 +1,17 @@
-//
-//  main.swift
-//  Advent of Code 2021
-//
-//  Created by June Bash on 12/11/21.
-//
-
 import Foundation
 
-print("Hello, World!")
+let completedDays: [Day.Type] = [
+    Day1.self,
+    Day2.self,
+    Day3.self
+]
 
+do {
+    let output = try completedDays.lazy
+        .map { try $0.output(indent: 0) }
+        .joined(separator: "\n")
+    print(output)
+} catch {
+    print("⚠️ ERROR! ⚠️")
+    print(error)
+}
