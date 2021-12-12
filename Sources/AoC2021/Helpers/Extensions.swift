@@ -30,3 +30,23 @@ extension Optional {
         try self.orThrow(UnwrapError(description))
     }
 }
+
+
+extension Sequence {
+    func minMax() -> (min: Element, max: Element)?
+    where Element: Comparable {
+        var iterator = makeIterator()
+        guard let firstElement = iterator.next() else { return nil }
+        var min = firstElement
+        var max = firstElement
+        while let element = iterator.next() {
+            if element < min {
+                min = element
+            }
+            if element > max {
+                max = element
+            }
+        }
+        return (min, max)
+    }
+}
