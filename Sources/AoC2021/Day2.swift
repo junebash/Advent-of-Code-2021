@@ -86,14 +86,14 @@ struct Movement {
 enum Day2: Day {
     static let day: Int = 2
 
-    static func solution1() throws -> Int {
+    static func solution1() async throws -> Int {
         try Movement.parseLines()
             .reduce(into: Position()) { position, movement in
                 position.move(movement)
             }.depth
     }
 
-    static func solution2() throws -> Int {
+    static func solution2() async throws -> Int {
         try Movement.parseLines()
             .reduce(into: Position()) { position, movement in
                 position.move2(movement)

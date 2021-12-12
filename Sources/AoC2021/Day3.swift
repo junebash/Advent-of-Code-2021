@@ -1,7 +1,7 @@
 enum Day3: Day {
     static let day: Int = 3
 
-    static func solution1() throws -> Int {
+    static func solution1() async throws -> Int {
         var ones = [Int: Int]()
         var zeroes = [Int: Int]()
 
@@ -34,7 +34,7 @@ enum Day3: Day {
         return gamma * epsilon
     }
 
-    static func solution2() throws -> Int {
+    static func solution2() async throws -> Int {
         try oxygenGeneratorRating() * co2scrubberRating()
     }
 

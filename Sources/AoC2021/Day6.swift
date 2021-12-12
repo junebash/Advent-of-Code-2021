@@ -65,7 +65,7 @@ enum Day6: Day {
             .map { School(fish: $0) }
     }
 
-    static func solution1() throws -> Int {
+    static func solution1() async throws -> Int {
         var school = try School.parser.parse(input)
             .orThrow(AdventError("failed to parse lantern fish school"))
         for _ in 1...80 {
@@ -74,7 +74,7 @@ enum Day6: Day {
         return school.count
     }
 
-    static func solution2() throws -> Int {
+    static func solution2() async throws -> Int {
         var school = try School.parser.parse(input)
             .orThrow(AdventError("failed to parse lantern fish school"))
         for _ in 1...256 {
