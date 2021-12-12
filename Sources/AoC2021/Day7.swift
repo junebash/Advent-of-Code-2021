@@ -7,13 +7,13 @@ private let positionParser = Many(Int.parser(), separator: ",".utf8)
 enum Day7: Day {
     static let day: Int = 7
 
-    static func solution1() async throws -> Int {
+    static func solution1() throws -> Int {
         let _ = try positionParser.parse(input)
             .orThrow("Couldn't parse crab submarine positions")
         return 0
     }
 
-    static func solution2() async throws -> Int {
+    static func solution2() throws -> Int {
         0
     }
 

@@ -107,7 +107,7 @@ enum Day5: Day {
 
     // MARK: - Solutions
 
-    static func solution1() async throws -> Int {
+    static func solution1() throws -> Int {
         let grid = try Grid.parser.parse(input)
             .orThrow(AdventError("Couldn't parse grid"))
 
@@ -120,7 +120,7 @@ enum Day5: Day {
         }
     }
 
-    static func solution2() async throws -> Int {
+    static func solution2() throws -> Int {
         let grid = try Grid.parser.parse(input)
             .orThrow(AdventError("Couldn't parse grid"))
         let data = grid.data

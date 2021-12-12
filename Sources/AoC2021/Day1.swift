@@ -26,11 +26,11 @@ private let windowedIncreaseCount = countIncreases(for: windowSums)
 enum Day1: Day {
     static let day: Int = 1
 
-    static func solution1() async throws -> Int {
+    static func solution1() throws -> Int {
         increaseCount
     }
 
-    static func solution2() async throws -> Int {
+    static func solution2() throws -> Int {
         windowedIncreaseCount
     }
 

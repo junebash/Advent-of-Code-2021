@@ -149,7 +149,7 @@ let bingoGameParser = Many(Int.parser(), separator: ",".utf8)
 enum Day4: Day {
     static let day: Int = 4
 
-    static func solution1() async throws -> Int {
+    static func solution1() throws -> Int {
         let output = try bingoGameParser.parse(input)
             .orThrow(AdventError("Failed to parse bingo game input"))
         var numbersToCall = output.numbersToCall[...]
@@ -162,7 +162,7 @@ enum Day4: Day {
         return score
     }
 
-    static func solution2() async throws -> Int {
+    static func solution2() throws -> Int {
         let output = try bingoGameParser.parse(input)
             .orThrow(AdventError("Failed to parse bingo game input"))
         var numbersToCall = output.numbersToCall[...]

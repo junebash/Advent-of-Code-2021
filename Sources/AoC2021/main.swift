@@ -8,16 +8,12 @@ let completedDays: [Day.Type] = [
     Day7.self,
 ]
 
-func main() async {
-    do {
-        let output = try await completedDays.lazy
-            .asyncMap { try await $0.output(indent: 0) }
-            .joined(separator: "\n")
-        print(output)
-    } catch {
-        print("⚠️ ERROR! ⚠️")
-        print(error)
-    }
+do {
+    let output = try completedDays.lazy
+        .map { try $0.output(indent: 0) }
+        .joined(separator: "\n")
+    print(output)
+} catch {
+    print("⚠️ ERROR! ⚠️")
+    print(error)
 }
-
-Task { }
