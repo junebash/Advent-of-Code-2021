@@ -3,7 +3,9 @@ import Foundation
 let completedDays: [Day.Type] = [
     Day1.self,
     Day2.self,
-    Day3.self
+    Day3.self,
+    Day4.self,
+    Day5.self
 ]
 
 do {

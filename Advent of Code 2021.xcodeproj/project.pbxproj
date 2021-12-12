@@ -14,6 +14,10 @@
 		1147ED3C27653B3C00BCFC6E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1147ED3B27653B3C00BCFC6E /* Extensions.swift */; };
 		1147ED3E27653B4F00BCFC6E /* AdventError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1147ED3D27653B4F00BCFC6E /* AdventError.swift */; };
 		1147ED4227653D1900BCFC6E /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1147ED4127653D1900BCFC6E /* Day.swift */; };
+		1147ED4427654C6900BCFC6E /* Day4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1147ED4327654C6900BCFC6E /* Day4.swift */; };
+		1147ED472765543700BCFC6E /* Parsing in Frameworks */ = {isa = PBXBuildFile; productRef = 1147ED462765543700BCFC6E /* Parsing */; };
+		1147ED49276572C200BCFC6E /* Day5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1147ED48276572C200BCFC6E /* Day5.swift */; };
+		1147ED4B27657B0900BCFC6E /* DebugParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1147ED4A27657B0900BCFC6E /* DebugParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +41,9 @@
 		1147ED3B27653B3C00BCFC6E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1147ED3D27653B4F00BCFC6E /* AdventError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventError.swift; sourceTree = "<group>"; };
 		1147ED4127653D1900BCFC6E /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		1147ED4327654C6900BCFC6E /* Day4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day4.swift; sourceTree = "<group>"; };
+		1147ED48276572C200BCFC6E /* Day5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day5.swift; sourceTree = "<group>"; };
+		1147ED4A27657B0900BCFC6E /* DebugParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1147ED472765543700BCFC6E /* Parsing in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +81,8 @@
 				1147ED382765396A00BCFC6E /* Day1.swift */,
 				1147ED342765379000BCFC6E /* Day2.swift */,
 				1147ED362765379600BCFC6E /* Day3.swift */,
+				1147ED4327654C6900BCFC6E /* Day4.swift */,
+				1147ED48276572C200BCFC6E /* Day5.swift */,
 				1147ED3A27653B3500BCFC6E /* Helpers */,
 			);
 			path = "Advent of Code 2021";
@@ -83,6 +93,7 @@
 			children = (
 				1147ED3B27653B3C00BCFC6E /* Extensions.swift */,
 				1147ED4127653D1900BCFC6E /* Day.swift */,
+				1147ED4A27657B0900BCFC6E /* DebugParser.swift */,
 				1147ED3D27653B4F00BCFC6E /* AdventError.swift */,
 			);
 			path = Helpers;
@@ -104,6 +115,9 @@
 			dependencies = (
 			);
 			name = "Advent of Code 2021";
+			packageProductDependencies = (
+				1147ED462765543700BCFC6E /* Parsing */,
+			);
 			productName = "Advent of Code 2021";
 			productReference = 1147ED2A2765378400BCFC6E /* Advent of Code 2021 */;
 			productType = "com.apple.product-type.tool";
@@ -132,6 +146,9 @@
 				Base,
 			);
 			mainGroup = 1147ED212765378400BCFC6E;
+			packageReferences = (
+				1147ED452765543700BCFC6E /* XCRemoteSwiftPackageReference "swift-parsing" */,
+			);
 			productRefGroup = 1147ED2B2765378400BCFC6E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -150,9 +167,12 @@
 				1147ED392765396A00BCFC6E /* Day1.swift in Sources */,
 				1147ED4227653D1900BCFC6E /* Day.swift in Sources */,
 				1147ED3E27653B4F00BCFC6E /* AdventError.swift in Sources */,
+				1147ED4B27657B0900BCFC6E /* DebugParser.swift in Sources */,
 				1147ED352765379000BCFC6E /* Day2.swift in Sources */,
 				1147ED372765379600BCFC6E /* Day3.swift in Sources */,
 				1147ED2E2765378400BCFC6E /* main.swift in Sources */,
+				1147ED49276572C200BCFC6E /* Day5.swift in Sources */,
+				1147ED4427654C6900BCFC6E /* Day4.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +338,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1147ED452765543700BCFC6E /* XCRemoteSwiftPackageReference "swift-parsing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-parsing.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1147ED462765543700BCFC6E /* Parsing */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1147ED452765543700BCFC6E /* XCRemoteSwiftPackageReference "swift-parsing" */;
+			productName = Parsing;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1147ED222765378400BCFC6E /* Project object */;
 }
