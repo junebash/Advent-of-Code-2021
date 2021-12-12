@@ -18,6 +18,7 @@
 		1147ED472765543700BCFC6E /* Parsing in Frameworks */ = {isa = PBXBuildFile; productRef = 1147ED462765543700BCFC6E /* Parsing */; };
 		1147ED49276572C200BCFC6E /* Day5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1147ED48276572C200BCFC6E /* Day5.swift */; };
 		1147ED4B27657B0900BCFC6E /* DebugParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1147ED4A27657B0900BCFC6E /* DebugParser.swift */; };
+		1147ED4D27657F7000BCFC6E /* Day6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1147ED4C27657F7000BCFC6E /* Day6.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,6 +45,7 @@
 		1147ED4327654C6900BCFC6E /* Day4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day4.swift; sourceTree = "<group>"; };
 		1147ED48276572C200BCFC6E /* Day5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day5.swift; sourceTree = "<group>"; };
 		1147ED4A27657B0900BCFC6E /* DebugParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugParser.swift; sourceTree = "<group>"; };
+		1147ED4C27657F7000BCFC6E /* Day6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day6.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				1147ED362765379600BCFC6E /* Day3.swift */,
 				1147ED4327654C6900BCFC6E /* Day4.swift */,
 				1147ED48276572C200BCFC6E /* Day5.swift */,
+				1147ED4C27657F7000BCFC6E /* Day6.swift */,
 				1147ED3A27653B3500BCFC6E /* Helpers */,
 			);
 			path = "Advent of Code 2021";
@@ -166,6 +169,7 @@
 				1147ED3C27653B3C00BCFC6E /* Extensions.swift in Sources */,
 				1147ED392765396A00BCFC6E /* Day1.swift in Sources */,
 				1147ED4227653D1900BCFC6E /* Day.swift in Sources */,
+				1147ED4D27657F7000BCFC6E /* Day6.swift in Sources */,
 				1147ED3E27653B4F00BCFC6E /* AdventError.swift in Sources */,
 				1147ED4B27657B0900BCFC6E /* DebugParser.swift in Sources */,
 				1147ED352765379000BCFC6E /* Day2.swift in Sources */,
