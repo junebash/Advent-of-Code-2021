@@ -107,30 +107,28 @@ enum Day5: Day {
 
     // MARK: - Solutions
 
-    static func solution1() throws -> String {
+    static func solution1() throws -> Int {
         let grid = try Grid.parser.parse(input)
             .orThrow(AdventError("Couldn't parse grid"))
 
         let data = grid.onGridData
 
-        let overlappingCount = data.values.reduce(into: 0) { result, count in
+        return data.values.reduce(into: 0) { result, count in
             if count >= 2 {
                 result += 1
             }
         }
-        return String(overlappingCount)
     }
 
-    static func solution2() throws -> String {
+    static func solution2() throws -> Int {
         let grid = try Grid.parser.parse(input)
             .orThrow(AdventError("Couldn't parse grid"))
         let data = grid.data
-        let count = data.values.reduce(into: 0) { partialResult, count in
+        return data.values.reduce(into: 0) { partialResult, count in
             if count >= 2 {
                 partialResult += 1
             }
         }
-        return String(count)
     }
 
     // MARK: - Input

@@ -2,8 +2,8 @@ protocol Day {
     static var input: String { get }
     static var day: Int { get }
 
-    static func solution1() throws -> String
-    static func solution2() throws -> String
+    static func solution1() throws -> Int
+    static func solution2() throws -> Int
 }
 
 extension Day {

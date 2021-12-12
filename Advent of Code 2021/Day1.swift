@@ -26,12 +26,12 @@ private let windowedIncreaseCount = countIncreases(for: windowSums)
 enum Day1: Day {
     static let day: Int = 1
 
-    static func solution1() throws -> String {
-        String(increaseCount)
+    static func solution1() throws -> Int {
+        increaseCount
     }
 
-    static func solution2() throws -> String {
-        String(windowedIncreaseCount)
+    static func solution2() throws -> Int {
+        windowedIncreaseCount
     }
 
     static let input: String = """

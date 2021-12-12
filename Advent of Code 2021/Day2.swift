@@ -86,22 +86,18 @@ struct Movement {
 enum Day2: Day {
     static let day: Int = 2
 
-    static func solution1() throws -> String {
-        try String(
-            Movement.parseLines()
-                .reduce(into: Position()) { position, movement in
-                    position.move(movement)
-                }.depth
-        )
+    static func solution1() throws -> Int {
+        try Movement.parseLines()
+            .reduce(into: Position()) { position, movement in
+                position.move(movement)
+            }.depth
     }
 
-    static func solution2() throws -> String {
-        try String(
-            Movement.parseLines()
-                .reduce(into: Position()) { position, movement in
-                    position.move2(movement)
-                }.depth
-        )
+    static func solution2() throws -> Int {
+        try Movement.parseLines()
+            .reduce(into: Position()) { position, movement in
+                position.move2(movement)
+            }.depth
     }
 
     static let input: String = """

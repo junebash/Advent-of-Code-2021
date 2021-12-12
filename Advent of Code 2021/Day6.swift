@@ -65,22 +65,22 @@ enum Day6: Day {
             .map { School(fish: $0) }
     }
 
-    static func solution1() throws -> String {
+    static func solution1() throws -> Int {
         var school = try School.parser.parse(input)
             .orThrow(AdventError("failed to parse lantern fish school"))
         for _ in 1...80 {
             school.tick()
         }
-        return String(school.count)
+        return school.count
     }
 
-    static func solution2() throws -> String {
+    static func solution2() throws -> Int {
         var school = try School.parser.parse(input)
             .orThrow(AdventError("failed to parse lantern fish school"))
         for _ in 1...256 {
             school.tick()
         }
-        return String(school.count)
+        return school.count
     }
 
     static let input: String = """

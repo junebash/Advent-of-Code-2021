@@ -1,7 +1,7 @@
 enum Day3: Day {
     static let day: Int = 3
 
-    static func solution1() throws -> String {
+    static func solution1() throws -> Int {
         var ones = [Int: Int]()
         var zeroes = [Int: Int]()
 
@@ -31,11 +31,11 @@ enum Day3: Day {
             let gamma = Int(gammaString, radix: 2),
             let epsilon = Int(epsilonString, radix: 2)
         else { throw AdventError("Couldn't convert number") }
-        return String(gamma * epsilon)
+        return gamma * epsilon
     }
 
-    static func solution2() throws -> String {
-        try String(oxygenGeneratorRating() * co2scrubberRating())
+    static func solution2() throws -> Int {
+        try oxygenGeneratorRating() * co2scrubberRating()
     }
 
     static func oxygenGeneratorRating() throws -> Int {
