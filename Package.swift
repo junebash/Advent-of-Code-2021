@@ -4,7 +4,7 @@ import PackageDescription
 
 let package = Package(
     name: "Advent of Code 2021",
-    platforms: [.macOS(.v11)],
+    platforms: [.macOS(.v12)],
     products: [
         .executable(name: "AoC2021", targets: ["AoC2021"])
     ],
