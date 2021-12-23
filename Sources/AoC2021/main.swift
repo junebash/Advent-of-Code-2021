@@ -8,6 +8,7 @@ let completedDays: [Day.Type] = [
     Day7.self,
     Day8.self,
     Day9.self,
+    Day10.self,
 ]
 
 do {
@@ -16,6 +17,5 @@ do {
         .joined(separator: "\n")
     print(output)
 } catch {
-    print("⚠️ ERROR! ⚠️")
-    print(error)
+    printError(error)
 }

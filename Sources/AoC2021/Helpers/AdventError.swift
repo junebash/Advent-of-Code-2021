@@ -7,3 +7,8 @@ struct AdventError: Error, LocalizedError {
         self.errorDescription = ["❗️", errorDescription, "❗️"].joined()
     }
 }
+
+func printError(_ error: Error) {
+    print("⚠️ ERROR! ⚠️")
+    print(error)
+}
