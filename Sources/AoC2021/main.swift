@@ -10,6 +10,7 @@ let completedDays: [Day.Type] = [
     Day9.self,
     Day10.self,
     Day11.self,
+    Day12.self,
 ]
 
 do {
