@@ -87,3 +87,12 @@ func comparing<Element, T: Comparable>(
         return compare(lhsT, rhsT)
     }
 }
+
+extension SortComparator {
+    static func keyPath<Compared, Value: Comparable>(
+        _ keyPath: KeyPath<Compared, Value>,
+        order: SortOrder = .forward
+    ) -> KeyPathComparator<Compared> where Self == KeyPathComparator<Compared> {
+        KeyPathComparator(keyPath, order: order)
+    }
+}
